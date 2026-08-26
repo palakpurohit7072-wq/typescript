@@ -14,3 +14,26 @@ console.log(typeof myname.toString());
 let name: number = NaN;
 let number = "palak";
 console.log( typeof name);
+
+
+//  boolean and  bigint
+
+function check(a:number):boolean
+{
+    return a%2===0;
+}
+let result = check(4);
+console.log(result);
+
+// any and unknown
+let a1:any = 55;   //example of any
+a1 = "palak";
+console.log(a1);
+   
+// example of unknown
+let a2:unknown = 55;
+a2 = "palak";
+if(typeof a2==="string"){
+    console.log(a2.toUpperCase());
+}
+
